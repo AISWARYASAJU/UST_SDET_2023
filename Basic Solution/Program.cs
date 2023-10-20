@@ -52,7 +52,7 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 double res = calculation.add(num1, num2);
 Console.WriteLine(res); */
 
-using Basic_Solution;
+/*using Basic_Solution;
 
 Electricity electricity1= new Electricity(12345, 9000, 9300, "XX");
 Console.WriteLine(electricity1.consumernumber);
@@ -63,7 +63,32 @@ Electricity electricity2= new Electricity(12345, 9000, 9300, "XX");
 Console.WriteLine(electricity2.consumernumber);
 Console.WriteLine(electricity2.consumername);
 Console.WriteLine(electricity2.CalculateBill());
+*/
 
+
+/*using Basic_Solution;
+
+Employee employee = new(111, "AISWARYA", "ECE", 100000);
+Console.WriteLine("Emp Id: {0} \n Name: {1} \n" + "Dept : {2} \n Basic Pay : {3}",
+  employee.Eid,
+  employee.Ename,
+  employee.Dept,
+  employee.Basicpay);
+//Console.WriteLine(employee.Dept);
+//Console.WriteLine(employee.Basicpay);
+//Console.WriteLine(employee.CalculateSalary());
+
+Console.WriteLine("Net Pay:{0}", employee.CalculateSalary());*/
+
+
+
+using Basic_Solution;
+
+ArraysEx arraysEx = new();
+//arraysEx.Onedim();
+//arraysEx.Twodim();
+
+arraysEx.Ja();
 
 
 
