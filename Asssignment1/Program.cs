@@ -16,7 +16,7 @@ foreach (var item in p1)
     Console.WriteLine("product quantity " + item.Quantity);
     Console.WriteLine("total price" + item.ProductValue());
 } */
-using Asssignment1;
+/*using Asssignment1;
 
 Students[] students = new Students[]
 {
@@ -44,7 +44,41 @@ foreach (Students item in students)
     Console.WriteLine($"Total Marks is:{total}");
     Console.WriteLine($"Average Marks is: {item.CalculateAverage()}");
     Console.WriteLine(item.GetMarksSummary());
-}
+*/
+
+/*using Asssignment1;
+
+ElectronicsProduct o = new ElectronicsProduct("aaa",1.1,2.2,10) ; */
+
+using Asssignment1;
+
+ElectronicProduct EP = new ElectronicProduct("PEN", 10, 5, 2);
+Console.WriteLine("***Electronics ProductDetails***\n");
+EP.DisplayWarrantyPeriod();
+Console.WriteLine($"Product Name:{EP.ProductName}\nPrice:{EP.Price}\nQuantity:{EP.Quantity}");
+Console.WriteLine($"Product Value:{EP.ProductValue()}");
+
+Console.WriteLine("\n\n");
+Console.WriteLine("***Digital ProductDetails***\n");
+
+DigitalElectronics DP = new DigitalElectronics("WASHINGMACHINE", 20000, 1, 2, "Full-option");
+Console.WriteLine($"Product Name:{DP.ProductName}\nPrice:{DP.Price}\nQuantity:{DP.Quantity}");
+Console.WriteLine(DP.ProductValue());
+DP.DisplayWarrantyPeriod();
+DP.DisplayFileformat();
+
+
+Console.WriteLine("\n\n");
+
+
+
+Console.WriteLine("***Clothing ProductDetails***\n");
+ClothingProduct clothingProduct = new ClothingProduct("Shirt", "XL", 2000, 1);
+Console.WriteLine($"Product Name:{clothingProduct.ProductName}\nPrice:{clothingProduct.Price}\nQuantity:{clothingProduct.Quantity}");
+clothingProduct.DisplayClothingProductSize();
+Console.WriteLine($"Total Value Of Product:{clothingProduct.ProductValue()}");
+
+
 
 
 
