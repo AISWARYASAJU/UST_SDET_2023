@@ -144,7 +144,7 @@ switch(Convert.ToInt32(Console.ReadLine()))
 
 
 
-using Basic_Solution;
+/*using Basic_Solution;
 
 EV ev = new();
 ev.Vehnum = 444;
@@ -159,7 +159,16 @@ pv.Vehnum = 444;
 pv.Brand = "XX";
 pv.Model = "AA";
 pv.Disp();
-Console.WriteLine(pv.setTypeForVehicle());
+Console.WriteLine(pv.setTypeForVehicle()); */
+using Basic_Solution;
+
+Doctor doc= new Doctor();
+doc.AddNewDoctor(123,"aa");
+doc.DisplayDoctorDetails(1,"ss");
+doc.ModifyDoctor(2,"aaas");
+doc.DisplayDoctorDetails(3,"aa");
+doc.BookApp(920, "xx");
+doc.DelApp("yu");
 
 
 

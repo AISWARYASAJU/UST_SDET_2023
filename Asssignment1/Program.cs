@@ -50,7 +50,7 @@ foreach (Students item in students)
 
 ElectronicsProduct o = new ElectronicsProduct("aaa",1.1,2.2,10) ; */
 
-using Asssignment1;
+/*using Asssignment1;
 
 ElectronicProduct EP = new ElectronicProduct("PEN", 10, 5, 2);
 Console.WriteLine("***Electronics ProductDetails***\n");
@@ -76,7 +76,9 @@ Console.WriteLine("***Clothing ProductDetails***\n");
 ClothingProduct clothingProduct = new ClothingProduct("Shirt", "XL", 2000, 1);
 Console.WriteLine($"Product Name:{clothingProduct.ProductName}\nPrice:{clothingProduct.Price}\nQuantity:{clothingProduct.Quantity}");
 clothingProduct.DisplayClothingProductSize();
-Console.WriteLine($"Total Value Of Product:{clothingProduct.ProductValue()}");
+Console.WriteLine($"Total Value Of Product:{clothingProduct.ProductValue()}"); */
+
+
 
 
 
