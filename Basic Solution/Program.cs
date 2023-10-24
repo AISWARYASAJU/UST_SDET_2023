@@ -160,7 +160,7 @@ pv.Brand = "XX";
 pv.Model = "AA";
 pv.Disp();
 Console.WriteLine(pv.setTypeForVehicle()); */
-using Basic_Solution;
+/*using Basic_Solution;
 
 Doctor doc= new Doctor();
 doc.AddNewDoctor(123,"aa");
@@ -168,11 +168,38 @@ doc.DisplayDoctorDetails(1,"ss");
 doc.ModifyDoctor(2,"aaas");
 doc.DisplayDoctorDetails(3,"aa");
 doc.BookApp(920, "xx");
-doc.DelApp("yu");
+doc.DelApp("yu"); */
+
+/*using Basic_Solution;
+
+//BankDetails  bank= new BankDetails(1234, 1223333333334L, "AA", "Inactive");
+//Console.WriteLine("1. Custid 2. Accno 3. Name");
+//int ch = Convert.ToInt32(Console.ReadLine());
+BankDetails  bank2= new (1234, 1223333333334L, "AA", "Inactive");
+bank2.WelcomeMessage();
+bank2.WelcomeMessage("Aiswarya");
+Console.WriteLine("1. Custid 2. Accno 3. Name");
+int ch = Convert.ToInt32
+switch (ch)
+{
+    case 1:
+        Console.WriteLine("Custid :");
+        bank.GetAccountDetails(Convert.ToInt32(Console.ReadLine()));
+        break;
+
+    case 2:
+        Console.WriteLine("Accno :");
+        bank.GetAccountDetails(Convert.ToInt64(Console.ReadLine()));
+        break;
+
+    case 3:
+        Console.WriteLine("Name :");
+        bank.GetAccountDetails(Convert.ToInt64(Console.ReadLine()));
+        break;
+    default: Console.WriteLine("Enter bet 1-3");
+        break;
+}
 
 
 
-
-
-
-
+     */

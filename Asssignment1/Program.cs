@@ -79,6 +79,34 @@ clothingProduct.DisplayClothingProductSize();
 Console.WriteLine($"Total Value Of Product:{clothingProduct.ProductValue()}"); */
 
 
+/*using Asssignment1;
+
+Console.Write("enter employee id");
+int id = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the first name:");
+string firstName= Console.ReadLine();
+Console.Write("Enter the last name");
+string lastName= Console.ReadLine();
+Console.WriteLine("enter the age");
+int age= Convert.ToInt32(Console.ReadLine());
+
+Employee employee = new Employee(firstName, lastName, age,id);
+employee.DisplayInfo(age); */
+
+using Asssignment1;
+
+Rectangle rectangle = new Rectangle(100, 10);
+rectangle.Draw();
+rectangle.CalculateArea();
+rectangle.CalculatePerimeter();
+
+Circle circle = new Circle(1);
+circle.Draw();
+circle.CalculateArea();
+circle.CalculatePerimeter();
+
+
+
 
 
 

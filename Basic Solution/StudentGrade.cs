@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Basic_Solution
+/*namespace Basic_Solution
 {
     internal class StudentGrade: StudentMarks
     {
@@ -19,4 +19,4 @@ namespace Basic_Solution
             return Grade;
         }
     }
-}
+} */
