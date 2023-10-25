@@ -93,7 +93,7 @@ int age= Convert.ToInt32(Console.ReadLine());
 Employee employee = new Employee(firstName, lastName, age,id);
 employee.DisplayInfo(age); */
 
-using Asssignment1;
+/*using Asssignment1;
 
 Rectangle rectangle = new Rectangle(100, 10);
 rectangle.Draw();
@@ -103,7 +103,39 @@ rectangle.CalculatePerimeter();
 Circle circle = new Circle(1);
 circle.Draw();
 circle.CalculateArea();
-circle.CalculatePerimeter();
+circle.CalculatePerimeter(); */
+
+/*using Asssignment1;
+
+InsurancePolicy i= new InsurancePolicy("aiswarya", 10, 100000);
+i.RenewPolicy();
+i.RenewPolicy(10000000); */
+
+using Asssignment1;
+
+Console.WriteLine("enter the policy ID:");
+int PolicyId = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the Policy Name:");
+string? PolicyName = Console.ReadLine();
+Console.WriteLine(" Enter the premmium amount:");
+double PremiumAmount = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("enter the age:");
+int age = Convert.ToInt32(Console.ReadLine());
+LifeInsurance life = new LifeInsurance(PolicyId, PolicyName, PremiumAmount, age);
+Console.WriteLine(life.CalculatePremium());
+Console.WriteLine("enter the policy ID:");
+int Policy1Id = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the Policy Name:");
+string? PolicyName1 = Console.ReadLine();
+Console.WriteLine(" Enter the premmium amount:");
+double PremiumAmount1 = Convert.ToInt64(Console.ReadLine());
+Console.WriteLine("enter the Car Type:");
+string? cartype = Console.ReadLine();
+CarInsurance car = new CarInsurance(PolicyId, PolicyName1, PremiumAmount1, cartype);
+Console.WriteLine(car.CalculatePremium());
+
+
+
 
 
 

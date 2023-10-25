@@ -210,5 +210,10 @@ NGC nGC = new NGC();
 //nGC.Stackhandling();
 //nGC.Queuehandling();
 //nGC.HThandling();
-nGC.SLHandling();
+//nGC.SLHandling();
+Basic_Solution.
+    GC gC = new();
+
+gC.Listhandling();
+
 
