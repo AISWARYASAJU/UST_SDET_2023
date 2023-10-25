@@ -203,3 +203,12 @@ switch (ch)
 
 
      */
+using Basic_Solution;
+
+NGC nGC = new NGC();
+//nGC.ArrayListHandling();
+//nGC.Stackhandling();
+//nGC.Queuehandling();
+//nGC.HThandling();
+nGC.SLHandling();
+
