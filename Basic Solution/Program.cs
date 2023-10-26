@@ -203,7 +203,7 @@ switch (ch)
 
 
      */
-using Basic_Solution;
+/*using Basic_Solution;
 
 NGC nGC = new NGC();
 //nGC.ArrayListHandling();
@@ -214,6 +214,37 @@ NGC nGC = new NGC();
 Basic_Solution.
     GC gC = new();
 
-gC.Listhandling();
+gC.Listhandling(); */
+//using Basic_Solution;
+//using Basic_Solution.ExceptionMessage;
+//using System.Linq.Expressions;
 
+//ExcepHandling excep = new ExcepHandling(10,0);
+////excep.Divide();
+
+//try
+//{
+//    excep.Divide();
+//}
+//catch (ArithmeticException ex)
+//{
+//                                                   //Console.WriteLine(ex.Message);
+//    Console.WriteLine(MyException.exmesslist["div 0"]);
+//}
+//                                                  //Console.WriteLine(ex.Source);
+    
+//                     //Console.WriteLine("dont give 0 for deno");
+
+//catch (IndexOutOfRangeException ex)
+//{
+//    Console.WriteLine(MyException.exmesslist[2]);
+//}
+//catch (Exception ex)
+//{
+//    Console.WriteLine(MyException.exmesslist[3]);
+//}
+
+//            // finally
+
+///*
 
