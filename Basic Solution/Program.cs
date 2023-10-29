@@ -26,8 +26,13 @@ for(int i=0;i<s.Length;i++)
 
     Console.WriteLine(s[i]);
 */
+
+
+
+//driver
+//
 /*char x = '5';
-switch(x)
+switch (x)
 {
     case 1:
         Console.WriteLine();
@@ -36,14 +41,16 @@ switch(x)
         Console.WriteLine();
         break;
     case 3:
-        default: Console.WriteLine();
+    default:
+        Console.WriteLine();
         break;
 }
 */
 
-//driver
+
 /*
 using Basic_Program;
+
 
 
 Calculation calculation = new Calculation();
@@ -232,7 +239,7 @@ gC.Listhandling(); */
 //    Console.WriteLine(MyException.exmesslist["div 0"]);
 //}
 //                                                  //Console.WriteLine(ex.Source);
-    
+
 //                     //Console.WriteLine("dont give 0 for deno");
 
 //catch (IndexOutOfRangeException ex)
@@ -246,5 +253,13 @@ gC.Listhandling(); */
 
 //            // finally
 
+
+using Basic_Solution;
 ///*
+///
+FileOperations fo= new FileOperations();
+//fo.CreateFile();
+
+//fo.WriteData();
+fo.FileProperties();
 

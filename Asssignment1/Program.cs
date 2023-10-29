@@ -143,14 +143,87 @@ long phoneNumber= Convert.ToInt64(Console.ReadLine());
 customer.custumerDetails(phoneNumber);
 customer.custumerAllDetails(); */
 
-using Asssignment1;
+/*using Asssignment1;
 
 CallRecord record = new CallRecord();
 Console.WriteLine("Enter the phone number");
 long number = Convert.ToInt64(Console.ReadLine());
-CallRecord.CallHistory(number); 
+CallRecord.CallHistory(number);  */
+
+//using Asssignment1.MyException;
+//using Asssignment1;
+
+//Patient patient = new Patient();
+//Console.Write("Enter the patient Id:");
+//int id = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter the Name:");
+//string name = Console.ReadLine();
+//Console.Write("Enter the Age:");
+//int age = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter the Diagnosis:");
+//string diagnosis = Console.ReadLine();
+//try
+//{
+//    patient.AddPatient(id, name, age, diagnosis);
+
+//}
+//catch (MyExceptions ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
+
+//using Asssignment1.MyException;
+//using Asssignment1;
+
+//Patient patient = new Patient();
+//Console.Write("Enter the patient Id:");
+//int id = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter the Name:");
+//string name = Console.ReadLine();
+//Console.Write("Enter the Age:");
+//int age = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Enter the Diagnosis:");
+//string diagnosis = Console.ReadLine();
+//try
+//{
+//    patient.AddPatient(id, name, age, diagnosis);
+
+//}
+//catch (MyExceptions ex)
+//{
+//    Console.WriteLine(ex.Message);
+//}
 
 
+using Asssignment1;
+
+MedicalHistory medicalHistory = new MedicalHistory();
+int option = 1;
+do
+{
+    Console.WriteLine("Enter  choice:");
+    Console.WriteLine("1.Add Record of patient\n2.View  Record of Patient\n3.Exit");
+    switch (Convert.ToInt32(Console.ReadLine()))
+    {
+        case 1:
+            Console.Write("Enter the record Id:");
+            int r_id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the patient Id:");
+            int p_id = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the Description:");
+            string description = Console.ReadLine();
+            Console.Write("Enter the Date:");
+            string date = Console.ReadLine();
+            medicalHistory.AddMedicalHistory(r_id, p_id, description, date);
+            medicalHistory.AddToFile(r_id, p_id, description, date);
+            break;
+        default:
+            Console.WriteLine("Invalid choice");
+            break;
+    }
+    Console.WriteLine("Do you wish to continue?\n1.Yes\n2.No");
+    option = Convert.ToInt32(Console.ReadLine());
+} while (option != 2);
 
 
 
