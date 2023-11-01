@@ -283,20 +283,45 @@ gC.Listhandling(); */
 //GenEx<int> ga = new GenEx<int> (new int[3] {10,20,30});
 
 //ga.Disp();
-static void Swap<T>(ref T num1, ref T num2)
+//static void Swap<T>(ref T num1, ref T num2)
+//{
+//    T temp;
+//    temp = num1;
+//    num1 = num2;
+//    num2 = temp;
+//}
+
+//int n1 = 10, n2 = 20;
+//char c1 = 'A', c2 = 'B';
+//Swap<int>(ref n1, ref n2);
+//Swap<char>(ref c1, ref c2);
+
+//Console.WriteLine("a= {0}, b={1}", n1, n2);
+//Console.WriteLine("c={0}, d={1}", c1, c2);
+
+using Basic_Solution;
+
+public delegate void Del1();      //Del1 delegate name
+class Program
 {
-    T temp;
-    temp = num1;
-    num1 = num2;
-    num2 = temp;
+    
+    public static void Main(string[] args)
+
+    {
+        Del1 dobj1 = DelEx.MethodA;
+        dobj1("Hello how r u");
+
+        DelEx delEx = new();
+        DelEx delEx2 = new();
+        dobj2(10, 20);
+
+
+
+
+       // dobj1.Invoke();
+
+    }
 }
-
-int n1 = 10, n2 = 20;
-char c1 = 'A', c2 = 'B';
-Swap<int>(ref n1, ref n2);
-Swap<char>(ref c1, ref c2);
-
-Console.WriteLine("a= {0}, b={1}", n1, n2);
-Console.WriteLine("c={0}, d={1}", c1, c2);
+    
 
 
