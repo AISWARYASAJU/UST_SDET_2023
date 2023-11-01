@@ -299,29 +299,29 @@ gC.Listhandling(); */
 //Console.WriteLine("a= {0}, b={1}", n1, n2);
 //Console.WriteLine("c={0}, d={1}", c1, c2);
 
-using Basic_Solution;
+//using Basic_Solution;
 
-public delegate void Del1();      //Del1 delegate name
-class Program
-{
+//public delegate void Del1();      //Del1 delegate name
+//class Program
+//{
     
-    public static void Main(string[] args)
+//    public static void Main(string[] args)
 
-    {
-        Del1 dobj1 = DelEx.MethodA;
-        dobj1("Hello how r u");
+//    {
+//        Del1 dobj1 = DelEx.MethodA;
+//        dobj1("Hello how r u");
 
-        DelEx delEx = new();
-        DelEx delEx2 = new();
-        dobj2(10, 20);
-
-
+//        DelEx delEx = new();
+//        DelEx delEx2 = new();
+//        dobj2(10, 20);
 
 
-       // dobj1.Invoke();
 
-    }
-}
+
+//       // dobj1.Invoke();
+
+//    }
+//}
     
 
 

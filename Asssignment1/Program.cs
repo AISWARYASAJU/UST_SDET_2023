@@ -395,27 +395,26 @@ CallRecord.CallHistory(number);  */
 //    }
 //}
 
+
+//using Asssignment1;
+
+//TourismDestination tourism1 = new TourismDestination("Kottayam", "India", 4);
+//TourismDestination tourism2 = new TourismDestination("Kannur", "India", 2);
+//TourismDestination tourism3 = new TourismDestination("TVM", "India", 3);
+//TourismDestination.tourismDestinations.Add(tourism1);
+//TourismDestination.tourismDestinations.Add(tourism2);
+//TourismDestination.tourismDestinations.Add(tourism3);
+//TourismDestination.SortngDestination();
+
 using Asssignment1;
 
-class Program
-{
-    public delegate double DelegateOne(Employees employee);
-    public delegate double DelegateTwo(Employees employeeone);
-
-    public static void Main(String[] args)
-    {
-        DelegateExample delegateExample = new DelegateExample();
-        Employees employee = new(1, "PARVATHY", 4);
-        Employees employeeone = new(2, "ARYA", 5);
-        DelegateOne delegateOne = Employees.BonusCalculation;
-        DelegateTwo delegateTwo = Employees.BonusCalculation;
-        Console.WriteLine($"Employee Name:{employee.EmployeeName}\nPerformance Rating:{employee.PerformanceRange}\nBonus Amount:{delegateOne(employee)}");
-        Console.WriteLine($"Employee Name:{employeeone.EmployeeName}\nPerformance Rating:{employeeone.PerformanceRange}\nBonus Amount:{delegateTwo(employeeone)}");
-
-    }
-}
-
-
+TourismDestination tourism1 = new TourismDestination("Kottayam", "India", 4);
+TourismDestination tourism2 = new TourismDestination("Kannur", "India", 2);
+TourismDestination tourism3 = new TourismDestination("TVM", "India", 3);
+TourismDestination.tourismDestinations.Add(tourism1);
+TourismDestination.tourismDestinations.Add(tourism2);
+TourismDestination.tourismDestinations.Add(tourism3);
+TourismDestination.SortngDestination();
 
 
 
