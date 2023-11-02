@@ -406,15 +406,37 @@ CallRecord.CallHistory(number);  */
 //TourismDestination.tourismDestinations.Add(tourism3);
 //TourismDestination.SortngDestination();
 
+//using Asssignment1;
+
+//TourismDestination tourism1 = new TourismDestination("Kottayam", "India", 4);
+//TourismDestination tourism2 = new TourismDestination("Kannur", "India", 2);
+//TourismDestination tourism3 = new TourismDestination("TVM", "India", 3);
+//TourismDestination.tourismDestinations.Add(tourism1);
+//TourismDestination.tourismDestinations.Add(tourism2);
+//TourismDestination.tourismDestinations.Add(tourism3);
+//TourismDestination.SortngDestination();
+
+//using Asssignment1;
+
+//Hotel hotel = new Hotel("zm", 4, "ars", "ll", 45);
+//Hotel hotel1 = new Hotel("an", 6, "ars", "nn", 45);
+//Hotel hotel2 = new Hotel("qq", 17, "qq", "mn", aa);
+
+
+//await hotel.HotelBookingig(6, hotel);
+//await hotel1.HotelBookingig(5, hotel1);
+//await hotel2.HotelBookingig(5, hotel2);
+
 using Asssignment1;
 
-TourismDestination tourism1 = new TourismDestination("Kottayam", "India", 4);
-TourismDestination tourism2 = new TourismDestination("Kannur", "India", 2);
-TourismDestination tourism3 = new TourismDestination("TVM", "India", 3);
-TourismDestination.tourismDestinations.Add(tourism1);
-TourismDestination.tourismDestinations.Add(tourism2);
-TourismDestination.tourismDestinations.Add(tourism3);
-TourismDestination.SortngDestination();
+Hotel hotel = new Hotel("name", 4, "bsh", "jjjj", 45);
+Hotel hotel1 = new Hotel("lakk", 6, "qqq", "asw", 45);
+Hotel hotel2 = new Hotel("name6", 17, "ars", "nnnn", 45);
+
+await hotel.HotelBookingig(6, hotel);
+await hotel1.HotelBookingig(5, hotel1);
+await hotel2.HotelBookingig(5, hotel2);
+
 
 
 

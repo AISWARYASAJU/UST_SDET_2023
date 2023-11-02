@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workout", "Workout\Workout.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{6F3559B0-B975-4E02-AADE-0FCA8CF31335}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadsEx", "ThreadsEx\ThreadsEx.csproj", "{CA59A465-17A8-4BA0-9646-3B2E4F9BADFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6F3559B0-B975-4E02-AADE-0FCA8CF31335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F3559B0-B975-4E02-AADE-0FCA8CF31335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F3559B0-B975-4E02-AADE-0FCA8CF31335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA59A465-17A8-4BA0-9646-3B2E4F9BADFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA59A465-17A8-4BA0-9646-3B2E4F9BADFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA59A465-17A8-4BA0-9646-3B2E4F9BADFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA59A465-17A8-4BA0-9646-3B2E4F9BADFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -82,14 +82,23 @@
 //Console.WriteLine("Emp Id: {0} \n Name: {1} \n Dept : {2} \n Basic Pay : {3}",  employee.Eid,
 //employee.Ename,employee.Dept,employee.Basicpay);
 
-  
+
 //Console.WriteLine(employee.Dept);
 //Console.WriteLine(employee.Basicpay);
 //Console.WriteLine(employee.CalculateSalary());
 
 //Console.WriteLine("Net Pay:{0}", employee.CalculateSalary());
 
+//using Workout;
 
+//ArrEx arraysEx = new();
+//arraysEx.Onedim();
+////arraysEx.Twodim();
+
+using Workout;
+
+ReverseArray o= new ReverseArray();
+o.Display();
 
 
 

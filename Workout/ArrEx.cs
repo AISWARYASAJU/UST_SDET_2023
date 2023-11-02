@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Basic_Solution
+namespace Workout
 {
-
-    internal class ArraysEx
+    internal class ArrEx
     {
-         int[] numbers = new int[5];                // = { 10, 20, 30 };
-                                        //int[,] nums;                                //= new int[2, 2];
+        readonly int[] numbers = new int[5];  // = { 10, 20, 30 };
+        int[,] nums;//= new int[2, 2];
         public void Onedim()
         {
 
@@ -42,18 +40,18 @@ namespace Basic_Solution
             }
         }
 
-            public void Twodim()
+        public void Twodim()
+        {
+            /*nums[0, 0] = 100;
+            nums[0, 1] = 200;
+            nums[1, 0] = 300;
+            nums[1, 1] = 400; */
+            int[,] nums = { { 1, 2 }, { 3, 4 } };
+            foreach (var num in nums)
             {
-                /*nums[0, 0] = 100;
-                nums[0, 1] = 200;
-                nums[1, 0] = 300;
-                nums[1, 1] = 400; */
-                int[,] nums={ { 1, 2 },{3,4} };
-                foreach (var num in nums)
-                {
-                    Console.WriteLine(num);
-                }
+                Console.WriteLine(num);
             }
+        }
         public void Ja()
         {
             int[][,] arr = new int[][,]
@@ -70,12 +68,10 @@ namespace Basic_Solution
             {
                 Console.WriteLine(item[1, 1]);
 
-               
+
             }
 
 
         }
-}
-
     }
-
+}
