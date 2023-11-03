@@ -322,6 +322,304 @@ gC.Listhandling(); */
 
 //    }
 //}
-    
+    //stack
+
+//using System;
+
+//class CustomStack<T>
+//{
+//    private T[] stackArray;
+//    private int top;
+//    private int maxSize;
+
+//    public CustomStack(int size)
+//    {
+//        maxSize = size;
+//        stackArray = new T[maxSize];
+//        top = -1;
+//    }
+
+//    public bool IsEmpty()
+//    {
+//        return top == -1;
+//    }
+
+//    public bool IsFull()
+//    {
+//        return top == maxSize - 1;
+//    }
+
+//    public void Push(T item)
+//    {
+//        if (IsFull())
+//        {
+//            Console.WriteLine("Stack is full. Cannot push.");
+//            return;
+//        }
+//        stackArray[++top] = item;
+//        Console.WriteLine($"Pushed: {item}");
+//    }
+
+//    public T Pop()
+//    {
+//        if (IsEmpty())
+//        {
+//            Console.WriteLine("Stack is empty. Cannot pop.");
+//            return default(T);
+//        }
+//        T poppedItem = stackArray[top--];
+//        Console.WriteLine($"Popped: {poppedItem}");
+//        return poppedItem;
+//    }
+
+//    public T Peek()
+//    {
+//        if (IsEmpty())
+//        {
+//            Console.WriteLine("Stack is empty. Cannot peek.");
+//            return default(T);
+//        }
+//        return stackArray[top];
+//    }
+//}
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        CustomStack<int> stack = new CustomStack<int>(5);
+
+//        stack.Push(1);
+//        stack.Push(2);
+//        stack.Push(3);
+
+//        var topItem = stack.Peek();
+//        Console.WriteLine($"Top item: {topItem}");
+
+//        stack.Pop();
+//        stack.Pop();
+//        stack.Pop();
+//        stack.Pop(); // Trying to pop from an empty stack
+
+//        stack.Push(4);
+//    }
+//}
+
+//queue
+
+//using System;
+
+//class CustomQueue<T>
+//{
+//    private T[] queueArray;
+//    private int front;
+//    private int rear;
+//    private int maxSize;
+
+//    public CustomQueue(int size)
+//    {
+//        maxSize = size;
+//        queueArray = new T[maxSize];
+//        front = -1;
+//        rear = -1;
+//    }
+
+//    public bool IsEmpty()
+//    {
+//        return front == -1;
+//    }
+
+//    public bool IsFull()
+//    {
+//        return (rear == maxSize - 1 && front == 0) || (rear + 1 == front);
+//    }
+
+//    public void Enqueue(T item)
+//    {
+//        if (IsFull())
+//        {
+//            Console.WriteLine("Queue is full. Cannot enqueue.");
+//            return;
+//        }
+//        if (rear == maxSize - 1)
+//        {
+//            rear = 0;
+//        }
+//        else
+//        {
+//            rear++;
+//        }
+//        queueArray[rear] = item;
+
+//        if (front == -1)
+//        {
+//            front = 0;
+//        }
+//        Console.WriteLine($"Enqueued: {item}");
+//    }
+
+//    public T Dequeue()
+//    {
+//        if (IsEmpty())
+//        {
+//            Console.WriteLine("Queue is empty. Cannot dequeue.");
+//            return default(T);
+//        }
+
+//        T dequeuedItem = queueArray[front];
+
+//        if (front == rear)
+//        {
+//            front = rear = -1;
+//        }
+//        else if (front == maxSize - 1)
+//        {
+//            front = 0;
+//        }
+//        else
+//        {
+//            front++;
+//        }
+//        Console.WriteLine($"Dequeued: {dequeuedItem}");
+//        return dequeuedItem;
+//    }
+//}
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        CustomQueue<int> queue = new CustomQueue<int>(5);
+
+//        queue.Enqueue(1);
+//        queue.Enqueue(2);
+//        queue.Enqueue(3);
+
+//        queue.Dequeue();
+//        queue.Dequeue();
+//        queue.Dequeue();
+//        queue.Dequeue(); // Trying to dequeue from an empty queue
+
+//        queue.Enqueue(4);
+//        queue.Enqueue(5);
+//    }
+//}
+
+//LL
+
+//using System;
+
+//class Node<T>
+//{
+//    public T Data { get; set; }
+//    public Node<T> Next { get; set; }
+
+//    public Node(T data)
+//    {
+//        Data = data;
+//        Next = null;
+//    }
+//}
+
+//class CustomLinkedList<T>
+//{
+//    private Node<T> head;
+
+//    public CustomLinkedList()
+//    {
+//        head = null;
+//    }
+
+//    public bool IsEmpty()
+//    {
+//        return head == null;
+//    }
+
+//    public void AddNode(T data)
+//    {
+//        var newNode = new Node<T>(data);
+//        if (head == null)
+//        {
+//            head = newNode;
+//        }
+//        else
+//        {
+//            var current = head;
+//            while (current.Next != null)
+//            {
+//                current = current.Next;
+//            }
+//            current.Next = newNode;
+//        }
+//        Console.WriteLine($"Added: {data}");
+//    }
+
+//    public bool RemoveNode(T data)
+//    {
+//        if (IsEmpty())
+//        {
+//            Console.WriteLine("List is empty. Cannot remove.");
+//            return false;
+//        }
+
+//        if (head.Data.Equals(data))
+//        {
+//            head = head.Next;
+//            Console.WriteLine($"Removed: {data}");
+//            return true;
+//        }
+
+//        var current = head;
+//        while (current.Next != null)
+//        {
+//            if (current.Next.Data.Equals(data))
+//            {
+//                current.Next = current.Next.Next;
+//                Console.WriteLine($"Removed: {data}");
+//                return true;
+//            }
+//            current = current.Next;
+//        }
+//        Console.WriteLine($"Data not found: {data}");
+//        return false;
+//    }
+
+//    public void DisplayList()
+//    {
+//        if (IsEmpty())
+//        {
+//            Console.WriteLine("List is empty.");
+//            return;
+//        }
+
+//        var current = head;
+//        Console.Write("List: ");
+//        while (current != null)
+//        {
+//            Console.Write(current.Data + " ");
+//            current = current.Next;
+//        }
+//        Console.WriteLine();
+//    }
+//}
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        CustomLinkedList<int> linkedList = new CustomLinkedList<int>();
+
+//        linkedList.AddNode(1);
+//        linkedList.AddNode(2);
+//        linkedList.AddNode(3);
+
+//        linkedList.RemoveNode(2);
+//        linkedList.RemoveNode(4); // Trying to remove a non-existent node
+
+//        linkedList.DisplayList();
+//    }
+//}
+
+
 
 

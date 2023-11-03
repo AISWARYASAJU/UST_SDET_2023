@@ -427,15 +427,46 @@ CallRecord.CallHistory(number);  */
 //await hotel1.HotelBookingig(5, hotel1);
 //await hotel2.HotelBookingig(5, hotel2);
 
+//using Asssignment1;
+
+//Hotel hotel = new Hotel("name", 4, "bsh", "jjjj", 45);
+//Hotel hotel1 = new Hotel("lakk", 6, "qqq", "asw", 45);
+//Hotel hotel2 = new Hotel("name6", 17, "ars", "nnnn", 45);
+
+//await hotel.HotelBookingig(6, hotel);
+//await hotel1.HotelBookingig(5, hotel1);
+//await hotel2.HotelBookingig(5, hotel2);
+
+
+
+//using Asssignment1;
+
+//ToDo toDo = new ToDo(1, "JAVA", "Completed");
+//ToDo toDo1 = new ToDo(2, "c#", "Pending");
+
+//ToDo.toDoList.Add(toDo);
+//ToDo.AddTodo(toDo);
+//ToDo.AddTodo(toDo1);
+//ToDo.updateList(2, "Completed");
+//ToDo.Display("Completed");
+//ToDo.Remove(1);
+
 using Asssignment1;
 
-Hotel hotel = new Hotel("name", 4, "bsh", "jjjj", 45);
-Hotel hotel1 = new Hotel("lakk", 6, "qqq", "asw", 45);
-Hotel hotel2 = new Hotel("name6", 17, "ars", "nnnn", 45);
+FamilyMember grandparent = new FamilyMember("Grandparent", 70);
+FamilyMember parent1 = new FamilyMember("Parent 1", 40);
+FamilyMember parent2 = new FamilyMember("Parent 2", 38);
+FamilyMember child1 = new FamilyMember("Child 2", 12);
+FamilyMember child2 = new FamilyMember("Child 2", 8);
 
-await hotel.HotelBookingig(6, hotel);
-await hotel1.HotelBookingig(5, hotel1);
-await hotel2.HotelBookingig(5, hotel2);
+grandparent.AddChild(parent1);
+grandparent.AddChild(parent2);
+parent1.AddChild(child1);
+parent2.AddChild(child2);
+
+FamilyTree familyTree = new FamilyTree(grandparent);
+familyTree.DisplayFamilyTree();
+
 
 
 

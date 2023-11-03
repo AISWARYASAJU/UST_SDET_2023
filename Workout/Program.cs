@@ -95,10 +95,17 @@
 //arraysEx.Onedim();
 ////arraysEx.Twodim();
 
+//using Workout;
+
+//ReverseArray o= new ReverseArray();
+//o.Display();
+
 using Workout;
 
-ReverseArray o= new ReverseArray();
-o.Display();
+SortingArray sr = new SortingArray();
+sr.DisplaySort();
+
+
 
 
 
